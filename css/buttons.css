@@ -1,4 +1,19 @@
-.button-next-prev {
-    width: 50px;
+.button{
+    cursor: pointer;
+    width: 8%;
+    position: absolute;
+    top: 13%;
+}
+.button-pres {
+    left: 35%;
+}
+.button-quiz {
+    left: 55%;
+}
 
+.button-back {
+    width: 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
