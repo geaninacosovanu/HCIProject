@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bg {
+    position: relative;
+    background: url("../img/city2.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+}
+
+.car1 {
+    z-index: 1;
+    position: absolute;
+    height: 300px;
+    bottom: -48px;
+    left: 320px;
+}
+
+.car2 {
+    z-index: 1;
+    position: absolute;
+    height: 300px;
+    bottom: -48px;
+    left: -10px;
+}
+
+.car3 {
+    z-index: 1;
+    position: absolute;
+    height: 300px;
+    bottom: -48px;
+    right: 310px;
+}
+
+.car4 {
+    z-index: 1;
+    position: absolute;
+    height: 300px;
+    bottom: -48px;
+    right: 0px;
+}
+
+.one {
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    height: 200px;
+    bottom: -48px;
+    left: 200px;
+    top: 100px;
+}
+
+.two {
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    height: 150px;
+    bottom: -30px;
+    left: 450px;
+    top: 120px;
+}
+
+.three {
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    height: 160px;
+    bottom: 300px;
+    right: 460px;
+}
+
+.four {
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    height: 180px;
+    bottom: 280px;
+    right: 250px;
+}

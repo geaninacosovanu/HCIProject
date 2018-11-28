@@ -17,3 +17,25 @@
     top: 0;
     right: 0;
 }
+
+.button-back-quiz {
+    width: 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button-next-quiz {
+    width: 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.button-listen-quiz {
+    width: 5%;
+    /*margin: -20px -50px;*/
+    position:absolute;
+    left: 50%;
+    right: 50%;
+}
