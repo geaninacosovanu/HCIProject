@@ -35,3 +35,13 @@ function wrongClick() {
     $('#' + ids[0]).addClass('animated pulse infinite');
 
 }
+
+
+function playAudio() {
+    event.stopPropagation();
+    document.getElementById('music').pause();
+    document.getElementById('dif').play();
+    setTimeout(() => {
+        document.getElementById('music').play();
+    },7000);
+}
