@@ -36,10 +36,7 @@
 }
 
 .button-listen-quiz {
-    cursor: pointer;
-    width: 5%;
-    /*margin: -20px -50px;*/
-    position:absolute;
-    left: 50%;
-    right: 50%;
+    width: 7%;
+    position: absolute;
+    left: 46%;
 }

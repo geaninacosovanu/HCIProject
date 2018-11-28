@@ -22,11 +22,10 @@ body {
 }
 
 .car2 {
-    z-index: 1;
     position: absolute;
-    height: 300px;
-    bottom: -48px;
-    left: -10px;
+    height: 35%;
+    bottom: 12%;
+    left: 8%;
 }
 
 .car3 {
@@ -46,13 +45,10 @@ body {
 }
 
 .one {
-    cursor: pointer;
-    z-index: 1;
     position: absolute;
-    height: 200px;
-    bottom: -48px;
-    left: 200px;
-    top: 100px;
+    height: 10%;
+    bottom: 42%;
+    left: 14%;
 }
 
 .two {
