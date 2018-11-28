@@ -12,6 +12,7 @@
 }
 
 .button-back {
+    cursor: pointer;
     width: 5%;
     position: absolute;
     top: 0;
@@ -19,6 +20,7 @@
 }
 
 .button-back-quiz {
+    cursor: pointer;
     width: 5%;
     position: absolute;
     top: 0;
@@ -26,6 +28,7 @@
 }
 
 .button-next-quiz {
+    cursor: pointer;
     width: 5%;
     position: absolute;
     top: 0;
@@ -33,6 +36,7 @@
 }
 
 .button-listen-quiz {
+    cursor: pointer;
     width: 5%;
     /*margin: -20px -50px;*/
     position:absolute;

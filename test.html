@@ -13,18 +13,78 @@
 <body onload="load()">
 <div id="bg" class="bg">
     <img  class="button-back-quiz" src="./img/back_but.png" onclick="back()">
-    <img  class="button-next-quiz" src="./img/next_button.png" onclick="nextPage2()">
-    <img  class="button-listen-quiz" src="./img/listen.jpg">
+    <img  id="nextButton" class="button-next-quiz" src="./img/next_button.png" onclick="nextPage2()">
+    <img  class="button-listen-quiz" src="./img/listen.jpg" onclick="playAudio()">
+    <audio id="cateMasini">
+        <source src="sounds/cateMasini.mp3" type="audio/mpeg">
+    </audio>
 
-    <img id="car" class="car1" src="./img/car.png">
-    <img id="car" class="car2" src="./img/car.png">
-    <img id="car" class="car3" src="./img/car.png">
-    <img id="car" class="car4" src="./img/car.png">
+    <img class="car1" src="./img/car.png">
+    <img class="car2" src="./img/car.png">
+    <img class="car3" src="./img/car.png">
+    <img class="car4" src="./img/car.png">
 
-    <img id="number" class="one" src="./img/1.png">
-    <img id="number" class="two" src="./img/2.png">
-    <img id="number" class="three" src="./img/3.png">
-    <img id="number" class="four" src="./img/4.png">
+    <img id="number" class="one" src="./img/1.png" onclick="playAudioUna()">
+    <audio id="una">
+        <source src="sounds/una.mp3" type="audio/mpeg">
+    </audio>
+
+    <img id="number" class="two" src="./img/2.png" onclick="playAudioDoua()">
+    <audio id="doua">
+        <source src="sounds/doua.mp3" type="audio/mpeg">
+    </audio>
+
+    <img id="number" class="three" src="./img/3.png" onclick="playAudioTrei()">
+    <audio id="trei">
+        <source src="sounds/trei.mp3" type="audio/mpeg">
+    </audio>
+
+    <img id="number" class="four" src="./img/4.png" onclick="playAudioPatru()">
+    <audio id="patru">
+        <source src="sounds/patru.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="happyKids">
+        <source src="sounds/happyKids.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="wrongAnswer">
+        <source src="sounds/wrongAnswer.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        var x = document.getElementById("cateMasini");
+
+        function playAudio() {
+            x.play();
+        }
+
+        var una=document.getElementById("una");
+        var doua=document.getElementById("doua");
+        var trei=document.getElementById("trei");
+        var patru=document.getElementById("patru");
+        var happyKids=document.getElementById("happyKids");
+        var wrongAnswer=document.getElementById("wrongAnswer");
+        var nextButton=document.getElementById("nextButton");
+
+        function playAudioUna() {
+            una.play();
+            wrongAnswer.play();
+        }
+        function playAudioDoua() {
+            doua.play();
+            wrongAnswer.play();
+        }
+        function playAudioTrei() {
+            trei.play();
+            wrongAnswer.play();
+        }
+        function playAudioPatru() {
+            patru.play();
+            happyKids.play();
+            nextButton.style.visibility='visible';
+
+        }
+    </script>
 
     <!--<img id="passing" src="img/traffic-light-red.png" class="passing">-->
     <!--<img id="cross_road" src="img/cross_road.png" class="cross-road">-->

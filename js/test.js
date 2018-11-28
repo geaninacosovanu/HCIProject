@@ -5,3 +5,10 @@ function back(){
 function nextPage2(){
     window.location.replace('./page2Quiz.html')
 }
+
+function load() {
+
+    var nextButton=document.getElementById("nextButton");
+    nextButton.style.visibility='hidden';
+
+}
