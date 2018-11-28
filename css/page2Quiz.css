@@ -34,10 +34,19 @@ body {
     height: 15%;
 }
 
-
 .car {
     position: absolute;
     width: 7%;
     bottom: 12%;
     right: 35%;
+}
+
+.star {
+    width: 7%;
+    position: absolute;
+    bottom: 0;
+}
+
+.shadow-filter {
+    box-shadow: 0px 0px 5px #fff;
 }
