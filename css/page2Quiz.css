@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bg {
+    position: relative;
+    background: url(../img/city_quiz.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+.boy {
+    position: absolute;
+    width: 3%;
+    bottom: 22%;
+    right: 25%;
+}
+
+.sun {
+    position: absolute;
+    right: 30%;
+    width: 8%;
+}
+
+.traffic-light {
+    position: absolute;
+    bottom: 22%;
+    width: 7%;
+    right: 10%;
+    height: 15%;
+}
+
+
+.car {
+    position: absolute;
+    width: 7%;
+    bottom: 12%;
+    right: 35%;
+}
