@@ -10,9 +10,15 @@
     <script type="text/javascript" src="lib/js/jquery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body>
+<body onload="startTireQuiz()">
 <div id="bg" class="bg">
-
+    <img id="car" src="img/tireless-car.png" class="car">
+    <img id="tire1" src="img/tire.png">
+    <img id="tire2" src="img/tire.png">
+    <img id="tire3" src="img/tire.png">
+    <img id="tire4" src="img/tire.png">
+    <img id="back" class="button-back-quiz" style="display: none" src="./img/back_but.png" onclick="back()">
+    <img id="next" class="button-next-quiz" style="display: none" src="./img/next_but.png" onclick="next()">
 </div>
 
 </body>

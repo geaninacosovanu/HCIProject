@@ -4,3 +4,113 @@ body {
     overflow: hidden;
 }
 
+
+.bg {
+    position: relative;
+    background: url("../img/city2_bg.png");
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+.car {
+    height:400px;
+    position:fixed;
+    bottom:70px;
+}
+#tire1 {
+    height: 88px;
+    position: fixed;
+    left: 943px;
+    bottom: 49px;
+    /* end position :
+    bottom: 161px;
+    left: 125px;
+     */
+    animation: none;
+}
+
+#tire2 {
+    height: 88px;
+    position: fixed;
+    left: 1230px;
+    bottom: 97px;
+
+    /* end position :
+    bottom: 161px;
+    left: 125px;
+     */
+    animation: none;
+}
+
+#tire3 {
+    height: 88px;
+    position: fixed;
+    left: 832px;
+    bottom: 123px;
+
+    /* end position :
+    bottom: 161px;
+    left: 125px;
+     */
+    animation: none;
+}
+
+#tire4 {
+    height: 88px;
+    position: fixed;
+    left: 542px;
+    bottom: 54px;
+
+    /* end position :
+    bottom: 161px;
+    left: 125px;
+     */
+    animation: none;
+}
+
+@keyframes moveTire1 {
+    from {
+        left: 943px;
+        bottom: 49px;
+    }
+    to {
+        left: 201px;
+        bottom: 134px;
+    }
+}
+
+@keyframes moveTire2 {
+    from {
+        left: 1230px;
+        bottom: 97px;
+
+    }
+    to {
+        left: 68px;
+        bottom: 167px;
+    }
+}
+@keyframes moveTire3 {
+    from {
+        left: 832px;
+        bottom: 123px;
+
+    }
+    to {
+        left: 400px;
+        bottom: 167px;
+    }
+}
+
+@keyframes moveTire4 {
+    from {
+        left: 542px;
+        bottom: 54px;
+
+    }
+    to {
+        left: 400px;
+        bottom: 167px;
+    }
+}
