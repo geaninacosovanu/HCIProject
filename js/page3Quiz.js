@@ -1,7 +1,7 @@
 let left = 0;
 
 function back() {
-    window.location.replace('./page2Quiz.html')
+    window.location.replace('./index.html')
 }
 
 function next() {

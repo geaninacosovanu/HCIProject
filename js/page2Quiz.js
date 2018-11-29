@@ -1,5 +1,5 @@
 function back() {
-    window.location.replace('./page1Quiz.html')
+    window.location.replace('./index.html')
 }
 
 function next() {
