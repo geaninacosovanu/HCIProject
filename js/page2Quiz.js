@@ -12,7 +12,6 @@ let left = 0;
 
 function imageClick(imgNr) {
     event.stopPropagation();
-
     foundIds.push(imgNr);
     const index = ids.indexOf(imgNr);
     ids.splice(index, 1);
