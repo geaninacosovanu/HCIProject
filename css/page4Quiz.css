@@ -23,7 +23,7 @@ body {
 #yellow{
     left: 1200px;
     position: fixed;
-    bottom: 160px;
+    bottom: 240px;
 }
 
 #blue {
@@ -35,11 +35,11 @@ body {
 #red {
     left: 1200px;
     position: fixed;
-    bottom: 240px;
+    bottom: 320px;
 }
 
 #green {
     left: 1200px;
     position: fixed;
-    bottom: 320px;
+    bottom: 160px;
 }
