@@ -35,8 +35,9 @@ function startTireQuiz() {
         $('#tire2').css('animation', 'moveTire2 16s forwards');
         $('#tire2').click(() => {
         });
-        tires_pressed += 1;
         setTimeout(() => {
+            tires_pressed += 1;
+
             if (tires_pressed === 1 || tires_pressed === 2) {
                 $("#car").attr("src", "img/" + 2 + "-tires-car.png");
             }
@@ -53,8 +54,9 @@ function startTireQuiz() {
         $('#tire3').css('animation', 'moveTire3 11s forwards');
         $('#tire3').click(() => {
         });
-        tires_pressed += 1;
         setTimeout(() => {
+            tires_pressed += 1;
+
             if (tires_pressed === 1 || tires_pressed === 2) {
                 $("#car").attr("src", "img/" + 2 + "-tires-car.png");
             }
@@ -71,8 +73,8 @@ function startTireQuiz() {
         $('#tire4').css('animation', 'moveTire4 8s forwards');
         $('#tire4').click(() => {
         });
-        tires_pressed += 1;
         setTimeout(() => {
+            tires_pressed += 1;
             if (tires_pressed === 1 || tires_pressed === 2) {
                 $("#car").attr("src", "img/" + 2 + "-tires-car.png");
             }
@@ -87,14 +89,14 @@ function startTireQuiz() {
 }
 
 function success() {
-    setTimeout(() => {
+
         if (tires_pressed === 4 && !won) {
             $('<embed src="sounds/happyKids.mp3" loop="false" autostart="false" hidden="true">').appendTo('body');
             won = true;
             $('#back').css('display', 'block');
             $('#next').css('display', 'block');
         }
-    }, 4000);
+
 }
 
 
