@@ -17,28 +17,28 @@ body {
     position: absolute;
     height: 35%;
     bottom: 12%;
-    left: 30%;
+    left: 28%;
 }
 
 .car2 {
     position: absolute;
     height: 35%;
     bottom: 12%;
-    left: 8%;
+    left: 5%;
 }
 
 .car3 {
     position: absolute;
     height: 35%;
     bottom: 12%;
-    right: 28%;
+    right: 29%;
 }
 
 .car4 {
     position: absolute;
     height: 35%;
     bottom: 12%;
-    right: 5%;
+    right: 7%;
 }
 
 .one {
@@ -46,7 +46,7 @@ body {
     position: absolute;
     height: 20%;
     bottom: 42%;
-    left: 20%;
+    left: 15%;
 }
 
 .two {
@@ -54,7 +54,7 @@ body {
     position: absolute;
     height: 20%;
     bottom: 42%;
-    left: 40%;
+    left: 39%;
 }
 
 .three {
@@ -70,11 +70,11 @@ body {
     position: absolute;
     height: 20%;
     bottom: 42%;
-    right: 10%;
+    right: 7%;
 }
 
 .star {
-    width: 7%;
+    width: 6%;
     position: absolute;
     bottom: 0;
 }

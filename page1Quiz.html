@@ -12,10 +12,12 @@
 
 </head>
 <body onload="load()">
+<audio id="music" loop  hidden src="sounds/autobuzul-1.mp3" type="audio/mpeg"></audio>
 <div id="bg" class="bg">
-    <img  class="button-back-quiz" src="./img/back_but.png" onclick="back()">
-    <img  id="nextButton" class="button-next-quiz" src="./img/next_button.png" onclick="nextPage2()">
-    <img  class="button-listen-quiz" src="./img/listen1.png" onclick="playAudio()">
+
+    <img class="button-back-quiz" src="./img/back_but.png" onclick="back()">
+    <img id="nextButton" class="button-next-quiz" src="./img/next_button.png" onclick="nextPage2()">
+    <img class="button-listen-quiz" src="./img/listen1.png" onclick="playAudio()">
     <audio id="cateMasini">
         <source src="sounds/cateMasini.mp3" type="audio/mpeg">
     </audio>
@@ -58,34 +60,61 @@
         var x = document.getElementById("cateMasini");
 
         function playAudio() {
+            document.getElementById('music').pause();
             x.play();
+            setTimeout(() => {
+                document.getElementById('music').play();
+            }, 7000);
         }
 
-        var una=document.getElementById("una");
-        var doua=document.getElementById("doua");
-        var trei=document.getElementById("trei");
-        var patru=document.getElementById("patru");
-        var happyKids=document.getElementById("happyKids");
-        var wrongAnswer=document.getElementById("wrongAnswer");
-        var nextButton=document.getElementById("nextButton");
+        var una = document.getElementById("una");
+        var doua = document.getElementById("doua");
+        var trei = document.getElementById("trei");
+        var patru = document.getElementById("patru");
+        var happyKids = document.getElementById("happyKids");
+        var wrongAnswer = document.getElementById("wrongAnswer");
+        var nextButton = document.getElementById("nextButton");
 
         function playAudioUna() {
+            document.getElementById('music').pause();
             una.play();
             wrongAnswer.play();
+            setTimeout(() => {
+                document.getElementById('music').play();
+            }, 3000);
+
         }
+
         function playAudioDoua() {
+            document.getElementById('music').pause();
             doua.play();
             wrongAnswer.play();
+            setTimeout(() => {
+                document.getElementById('music').play();
+            }, 3000);
         }
+
         function playAudioTrei() {
+            document.getElementById('music').pause();
             trei.play();
             wrongAnswer.play();
+            setTimeout(() => {
+                document.getElementById('music').play();
+            }, 3000);
         }
+
         function playAudioPatru() {
+            document.getElementById('music').pause();
             patru.play();
-            happyKids.play();
-            nextButton.style.visibility='visible';
-            rightClick();
+            setTimeout(() => {
+                happyKids.play();
+                setTimeout(() => {
+                    document.getElementById('music').play();
+                }, 3000);
+                nextButton.style.visibility = 'visible';
+                rightClick();
+            }, 2000);
+
         }
     </script>
 
