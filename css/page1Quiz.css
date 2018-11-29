@@ -14,11 +14,10 @@ body {
 }
 
 .car1 {
-    z-index: 1;
     position: absolute;
-    height: 300px;
-    bottom: -48px;
-    left: 320px;
+    height: 35%;
+    bottom: 12%;
+    left: 30%;
 }
 
 .car2 {
@@ -29,52 +28,53 @@ body {
 }
 
 .car3 {
-    z-index: 1;
     position: absolute;
-    height: 300px;
-    bottom: -48px;
-    right: 310px;
+    height: 35%;
+    bottom: 12%;
+    right: 28%;
 }
 
 .car4 {
-    z-index: 1;
     position: absolute;
-    height: 300px;
-    bottom: -48px;
-    right: 0px;
+    height: 35%;
+    bottom: 12%;
+    right: 5%;
 }
 
 .one {
+    cursor: pointer;
     position: absolute;
-    height: 10%;
+    height: 20%;
     bottom: 42%;
-    left: 14%;
+    left: 20%;
 }
 
 .two {
     cursor: pointer;
-    z-index: 1;
     position: absolute;
-    height: 150px;
-    bottom: -30px;
-    left: 450px;
-    top: 120px;
+    height: 20%;
+    bottom: 42%;
+    left: 40%;
 }
 
 .three {
     cursor: pointer;
-    z-index: 1;
     position: absolute;
-    height: 160px;
-    bottom: 300px;
-    right: 460px;
+    height: 20%;
+    bottom: 42%;
+    right: 30%;
 }
 
 .four {
     cursor: pointer;
-    z-index: 1;
     position: absolute;
-    height: 180px;
-    bottom: 280px;
-    right: 250px;
+    height: 20%;
+    bottom: 42%;
+    right: 10%;
+}
+
+.star {
+    width: 7%;
+    position: absolute;
+    bottom: 0;
 }

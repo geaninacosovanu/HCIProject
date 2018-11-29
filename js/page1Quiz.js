@@ -10,3 +10,13 @@ function load() {
     var nextButton=document.getElementById("nextButton");
     nextButton.style.visibility='hidden';
 }
+
+let left = 0;
+function rightClick() {
+    for(var i=1;i<=4;i++) {
+        $("#stars")
+            .append($('<img class="star animated zoomInDown " src="./img/star.png">')
+                        .css('left', left + '%'));
+        left += 7;
+    }
+}
