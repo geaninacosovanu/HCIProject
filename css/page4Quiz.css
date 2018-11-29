@@ -13,11 +13,19 @@ body {
     background-size: 100% 100%;
     background-position: 0 0;
 }
+
+.car {
+    height:400px;
+    position:fixed;
+    bottom:70px;
+}
+
 .traffic {
     z-index:1;
     height: auto;
     position: absolute;
     bottom: 80px;
+    left: 200px;
     animation: animateSemaphore 21s forwards;
 }
 #yellow{

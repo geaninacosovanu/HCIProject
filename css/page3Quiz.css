@@ -7,11 +7,11 @@ body {
 
 .bg {
     position: relative;
-    background: url(../img/city2_bg.png) no-repeat;
+    background: url("../img/city2.png");
     height: 100vh;
-    width: 100%;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: 0 0;
+    background-repeat: repeat-x;
 }
 .car {
     height:400px;
@@ -119,4 +119,29 @@ body {
     width: 6%;
     position: absolute;
     bottom: 0;
+}
+
+
+#traffic {
+    position: fixed;
+    bottom: 80px;
+    left: 200px;
+    display: none;
+}
+@keyframes animateTraffic {
+    from {
+        left: 1700px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
 }

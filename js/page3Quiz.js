@@ -5,7 +5,12 @@ function back() {
 }
 
 function next() {
-    window.location.replace('./page4Quiz.html')
+    $("#traffic").css("display", "block");
+    $("#traffic").css("animation", "animateTraffic 10s forwards");
+    $("#bg").css("animation", "animate 10s forwards");
+    setTimeout(()=>{
+        window.location.replace('./page4Quiz.html')
+    }, 10000);
 }
 
 let won = false;
@@ -13,7 +18,7 @@ let tires_pressed = 0;
 
 function startTireQuiz() {
     $("#tire1").click(() => {
-        $('#tire1').css('animation', 'moveTire1 14s forwards');
+        $('#tire1').css('animation', 'moveTire1 4s forwards');
         $('#tire1').click(() => {
         });
 
@@ -28,11 +33,11 @@ function startTireQuiz() {
             appendStar();
             success();
 
-        }, 14000);
+        }, 4000);
     });
 
     $("#tire2").click(() => {
-        $('#tire2').css('animation', 'moveTire2 16s forwards');
+        $('#tire2').css('animation', 'moveTire2 6s forwards');
         $('#tire2').click(() => {
         });
         setTimeout(() => {
@@ -47,11 +52,11 @@ function startTireQuiz() {
             appendStar();
             success();
 
-        }, 16000);
+        }, 6000);
     });
 
     $("#tire3").click(() => {
-        $('#tire3').css('animation', 'moveTire3 11s forwards');
+        $('#tire3').css('animation', 'moveTire3 5s forwards');
         $('#tire3').click(() => {
         });
         setTimeout(() => {
@@ -66,11 +71,11 @@ function startTireQuiz() {
             appendStar();
             success();
 
-        }, 11000);
+        }, 5000);
     });
 
     $("#tire4").click(() => {
-        $('#tire4').css('animation', 'moveTire4 8s forwards');
+        $('#tire4').css('animation', 'moveTire4 7s forwards');
         $('#tire4').click(() => {
         });
         setTimeout(() => {
@@ -83,7 +88,7 @@ function startTireQuiz() {
             $('#tire4').css('display', 'none');
             appendStar();
             success();
-        }, 8000);
+        }, 7000);
     });
 
 }
@@ -95,6 +100,7 @@ function success() {
             won = true;
             $('#back').css('display', 'block');
             $('#next').css('display', 'block');
+
         }
 
 }
