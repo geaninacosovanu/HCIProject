@@ -14,10 +14,10 @@ body {
 }
 
 .building {
-    width: 33%;
+    width: 28%;
     position: absolute;
-    right: 21%;
-    bottom: 40%;
+    right: 24%;
+    bottom: 39%;
 }
 
 .car {
@@ -27,6 +27,22 @@ body {
     bottom: 2%;
     left: 2%;
     animation: animate 5s forwards;
+
+}
+
+.patient {
+    position: absolute;
+    left: 22%;
+    bottom: 38%;
+    width: 21%;
+
+}
+
+.doctor {
+    position: absolute;
+    bottom: 36%;
+    right: 9%;
+    width: 12%;
 
 }
 
@@ -46,29 +62,6 @@ body {
         left: 35%;
 
     }
-}
-
-.children {
-    position: absolute;
-    width: 15%;
-    left: 22%;
-    bottom: 40%;
-
-}
-
-.teacher {
-    position: absolute;
-    right: 33%;
-    bottom: 39%;
-    width: 10%;
-}
-
-.cross-road {
-    z-index: 0;
-    position: absolute;
-    width: 58%;
-    bottom: -8%;
-    right: -2%;
 }
 
 .boy-go {

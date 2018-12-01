@@ -3,7 +3,7 @@ function load() {
         $('#car').attr('src', './img/car.png');
         $('#boy').css('display', 'block');
         playAudio();
-        setTimeout(()=>{
+        setTimeout(() => {
             $('#listen').css('display', 'block');
             $('#back').css('display', 'block');
             $('#next').css('display', 'block');
@@ -14,11 +14,8 @@ function load() {
 }
 
 function playAudio() {
-    document.getElementById('music').pause();
     document.getElementById('sound').play();
-    setTimeout(() => {
-        document.getElementById('music').play();
-    },7000);
+
 }
 
 function back() {
@@ -26,12 +23,6 @@ function back() {
 }
 
 function next() {
-    $('#boy').addClass('boy-go');
-    setTimeout(()=>{
-        $('#boy').css('display', 'none');
-        $('#car').attr('src', './img/car_with_boy.png').addClass('car-go');
-        setTimeout(()=>{
-            window.location.replace('./page3.html');
-        },4000);
-    },5000);
+
+    window.location.replace('./page7.html');
 }

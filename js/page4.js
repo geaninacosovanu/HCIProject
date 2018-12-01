@@ -31,7 +31,7 @@ function next() {
         $('#boy').css('display', 'none');
         $('#car').attr('src', './img/car_with_boy.png').addClass('car-go');
         setTimeout(()=>{
-            window.location.replace('./page3.html');
+            window.location.replace('./page5.html');
         },4000);
     },5000);
 }

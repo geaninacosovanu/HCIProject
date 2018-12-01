@@ -14,10 +14,10 @@ body {
 }
 
 .building {
-    width: 33%;
+    width: 28%;
     position: absolute;
-    right: 21%;
-    bottom: 40%;
+    right: 24%;
+    bottom: 34%;
 }
 
 .car {
@@ -28,6 +28,19 @@ body {
     left: 2%;
     animation: animate 5s forwards;
 
+}
+.bancher{
+    position: absolute;
+    bottom: 36%;
+    width: 16%;
+    left: 22%;
+}
+
+.bancher1{
+    position: absolute;
+    bottom: 40%;
+    right: 10%;
+    width: 9%;
 }
 
 .boy {
@@ -48,34 +61,12 @@ body {
     }
 }
 
-.children {
-    position: absolute;
-    width: 15%;
-    left: 22%;
-    bottom: 40%;
-
-}
-
-.teacher {
-    position: absolute;
-    right: 33%;
-    bottom: 39%;
-    width: 10%;
-}
-
-.cross-road {
-    z-index: 0;
-    position: absolute;
-    width: 58%;
-    bottom: -8%;
-    right: -2%;
-}
 
 .boy-go {
     animation: animate-boy 5s forwards;
 }
 
-.car-go {
+.car-go{
     animation: animate-car 5s forwards;
 
 }
@@ -89,7 +80,6 @@ body {
 
     }
 }
-
 @keyframes animate-car {
     from {
         left: 35%;

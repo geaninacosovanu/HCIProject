@@ -6,7 +6,7 @@ body {
 
 .bg {
     position: relative;
-    background: url(../img/bg_pres.png) no-repeat;
+    background: url(../img/city2_bg.png) no-repeat;
     height: 100vh;
     width: 100%;
     background-size: 100% 100%;
@@ -14,17 +14,19 @@ body {
 }
 
 .building {
-    width: 33%;
+    width: 29%;
     position: absolute;
-    right: 21%;
-    bottom: 40%;
+    right: 34%;
+    bottom: 39%;
 }
+
+
 
 .car {
     z-index: 1;
     position: absolute;
     width: 20%;
-    bottom: 2%;
+    bottom: 11%;
     left: 2%;
     animation: animate 5s forwards;
 
@@ -33,7 +35,7 @@ body {
 .boy {
     z-index: 1;
     position: absolute;
-    bottom: 6%;
+    bottom: 15%;
     right: 31%;
     width: 6%;
 }
@@ -48,34 +50,13 @@ body {
     }
 }
 
-.children {
-    position: absolute;
-    width: 15%;
-    left: 22%;
-    bottom: 40%;
 
-}
-
-.teacher {
-    position: absolute;
-    right: 33%;
-    bottom: 39%;
-    width: 10%;
-}
-
-.cross-road {
-    z-index: 0;
-    position: absolute;
-    width: 58%;
-    bottom: -8%;
-    right: -2%;
-}
 
 .boy-go {
     animation: animate-boy 5s forwards;
 }
 
-.car-go {
+.car-go{
     animation: animate-car 5s forwards;
 
 }
@@ -89,7 +70,6 @@ body {
 
     }
 }
-
 @keyframes animate-car {
     from {
         left: 35%;
