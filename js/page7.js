@@ -24,5 +24,5 @@ function back() {
 
 function next() {
 
-    window.location.replace('./page7.html');
+    window.location.replace('./page8.html');
 }
