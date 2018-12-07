@@ -19,10 +19,10 @@ function playAudio() {
 }
 
 function back() {
-    window.location.replace('./index.html')
+    window.location.replace('./page6.html')
 }
 
 function next() {
 
-    window.location.replace('./page8.html');
+    window.location.replace('./final.html');
 }

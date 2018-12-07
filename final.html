@@ -13,7 +13,8 @@
 <body onload="load()">
 <div class="bg">
     <img class="button-listen-quiz" src="./img/listen1.png" onclick="playAudio()">
-    <img class="button-back-quiz" src="./img/back_but.png" id="back" onclick="back()" style="display: none">
+    <img class="button-next-quiz" src="./img/next_but.png" id="next" onclick="next()" style="display: none">
+    <img class="button-back-quiz" src="./img/back_but.png" id="back" onclick="back()">
 
     <img id="school" class="bounce" src="./img/scoala.png">
     <img id="teacher" src="./img/teacher.png">
@@ -30,6 +31,10 @@
     <img id="police" src="./img/police.png">
     <!--<img id="police_car" src="./img/police_car.png">-->
     <img  id="policeman" src="./img/policeman.png">
+    <audio id="music" controls  autoplay hidden src="sounds/autobuzul-1.mp3" type="audio/mpeg"></audio>
+    <audio id="dif" controls  hidden src="sounds/4dif.mp4" type="audio/mpeg"></audio>
+    <audio id="wrong" controls  hidden src="sounds/wrongAnswer.mp3" type="audio/mpeg"></audio>
+
 </div>
 
 </body>

@@ -22,7 +22,7 @@ function playAudio() {
 }
 
 function back() {
-    window.location.replace('./index.html')
+    window.location.replace('./page3.html')
 }
 
 function next() {
