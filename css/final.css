@@ -27,23 +27,23 @@ body {
 #policeman {
     width: 5%;
     position: absolute;
-    right: 53px;
-    bottom: 18px;
+    right: 6%;
+    bottom: 0%;
     z-index: 1;
 }
 
 #police {
     position: fixed;
     width: 17%;
-    bottom: 366px;
-    right: 13px;
-    z-index: 1
+    bottom: 42%;
+    right: 0%;
+    z-index: 1;
 }
 
 #hospital {
     width: 28%;
     position: absolute;
-    right: 709px;
+    right: 37%;
     bottom: 37%;
 }
 
@@ -57,8 +57,8 @@ body {
 #mayor {
     width: 5%;
     position: absolute;
-    right: 943px;
-    bottom: 18px;
+    right: 50%;
+    bottom: 0%;
 }
 
 #cityhall {
@@ -70,8 +70,8 @@ body {
 
 #doctor {
     position: absolute;
-    bottom: 0px;
-    right: 200px;
+    bottom: 0%;
+    right: 14%;
     width: 10%;
 }
 .bg {
@@ -85,12 +85,12 @@ body {
 #bank {
     width: 28%;
     position: absolute;
-    left: 240px;
+    left: 12%;
     bottom: 34%;
 }
 #school {
     position: fixed;
-    bottom: 371px;
+    bottom: 41%;
     z-index: 1;
 }
 
@@ -98,8 +98,8 @@ body {
     z-index: 2;
     position: fixed;
     width: 10%;
-    left: 350px;
-    bottom: 0px;
+    left: 18%;
+    bottom: 0%;
 }
 
 #children {
@@ -122,18 +122,18 @@ body {
     position: fixed;
     width: 10%;
     z-index: 2;
-    bottom: -1px;
-    left: 464px;
+    bottom: 0%;
+    left: 25%;
 }
 
 @keyframes moveSuit {
     from {
-        bottom: -1px;
-        left: 464px;
+        bottom: 0%;
+        left: 25%;
     }
     to {
-        bottom: 345px;
-        left: 464px;
+        bottom: 35%;
+        left: 19%;
     }
 }
 
@@ -151,12 +151,12 @@ body {
 
 @keyframes moveTeacher {
     from {
-        left: 350px;
-        bottom: 0;
+        width: 10%;
+        left: 18%;
     }
     to {
-        left: -59px;
-        bottom: 345px;
+        left: 0%;
+        bottom: 36%;
     }
 }
 
@@ -188,25 +188,25 @@ body {
 
 @keyframes moveDoctor {
     from {
-        bottom: 0px;
-        right: 200px;
+        right: 14%;
+        width: 10%;
     }
 
     to {
-        bottom: 350px;
-        right: 720px;
+        bottom: 35%;
+        right: 44%;
     }
 }
 
 @keyframes moveMayor {
     from {
-        right: 943px;
-        bottom: 18px;
+        right: 50%;
+        bottom: 0%;
     }
 
     to {
-        right: 455px;
-        bottom: 350px;
+        right: 27%;
+        bottom: 38%;
     }
 }
 
@@ -224,12 +224,12 @@ body {
 
 @keyframes moveCop {
     from {
-        right: 53px;
-        bottom: 18px;
+        right: 6%;
+        bottom: 0%;
     }
     to {
-        right: 53px;
-        bottom: 348px;
+        right: 6%;
+        bottom: 38%;
     }
 }
 @keyframes moveCar {

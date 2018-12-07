@@ -13,12 +13,23 @@ var bankPressed = false;
 var hospitalPressed = false;
 var policePressed = false;
 var cityHallPressed = false;
+var done = false;
+
+
+function won() {
+    if (!done && copPressed && cityHallPressed && mayorPressed && schoolPressed && policePressed && bankPressed && suitPressed && teacherPressed && docPressed && hospitalPressed) {
+        done = true;
+        $('<embed src="sounds/happyKids.mp3" loop="false" autostart="false" hidden="true">').appendTo('body');
+        $('#back').css('display', 'block');
+    }
+}
 
 function load() {
 
     var count = 0;
     $("#mayor").click(()=> {
         if (cityHallPressed && count === 1) {
+            mayorPressed = true;
             $("#mayor").addClass("animated pulse infinite");
             $("#mayor").css("animation", "moveMayor 5s forwards");
             $("#mayor").click(()=>{});
@@ -26,6 +37,7 @@ function load() {
             setTimeout(()=> {
                     $("#mayor").removeClass("animated pulse infinite");
                     $("#cityhall").removeClass("animated pulse infinite");
+                    won();
                 }, 5000);
                 count-=1;
             }
@@ -45,11 +57,13 @@ function load() {
 
     $("#cityhall").click(() => {
         if (mayorPressed && count === 1) {
-                $("#cityhall").addClass("animated pulse infinite");
+            cityHallPressed = true;
+            $("#cityhall").addClass("animated pulse infinite");
                 $("#mayor").css("animation", "moveMayor 5s forwards");
                 setTimeout(()=> {
                     $("#mayor").removeClass("animated pulse infinite");
                     $("#cityhall").removeClass("animated pulse infinite");
+                    won();
                 }, 5000);
                 $("#mayor").click(()=>{});
                 $("#cityhall").click(()=>{});
@@ -73,11 +87,13 @@ function load() {
     // police
     $("#police").click(() => {
         if (copPressed && count === 1) {
+            policePressed = true;
             $("#police").addClass("animated pulse infinite");
             $("#policeman").css("animation", "moveCop 5s forwards");
             setTimeout(()=> {
                 $("#police").removeClass("animated pulse infinite");
                 $("#policeman").removeClass("animated pulse infinite");
+                won();
             }, 5000);
             $("#police").click(()=>{});
             count -= 1;
@@ -98,11 +114,13 @@ function load() {
 
     $("#policeman").click(()=> {
             if (policePressed && count === 1) {
+                copPressed = true;
                 $("#police").addClass("animated pulse infinite");
                 $("#policeman").css("animation", "moveCop 5s forwards");
                 setTimeout(()=> {
                     $("#police").removeClass("animated pulse infinite");
                     $("#policeman").removeClass("animated pulse infinite");
+                    won();
                 }, 5000);
                 $("#police").click(()=>{});
                 $("#policeman").click(()=>{});
@@ -126,11 +144,13 @@ function load() {
 
     $("#school").click(() => {
         if (teacherPressed && count === 1) {
+            schoolPressed = true;
             $("#school").addClass("animated pulse infinite");
             $("#teacher").css("animation", "moveTeacher 5s forwards");
             setTimeout(()=> {
                 $("#school").removeClass("animated pulse infinite");
                 $("#teacher").removeClass("animated pulse infinite");
+                won();
             }, 5000);
             $("#school").click(()=>{});
             $("#teacher").click(()=>{});
@@ -152,11 +172,13 @@ function load() {
 
     $("#teacher").click(()=> {
             if (schoolPressed && count === 1) {
+                teacherPressed = true;
                 $("#school").addClass("animated pulse infinite");
                 $("#teacher").css("animation", "moveTeacher 5s forwards");
                 setTimeout(()=> {
                     $("#school").removeClass("animated pulse infinite");
                     $("#teacher").removeClass("animated pulse infinite");
+                    won();
                 }, 5000);
                 $("#school").click(()=>{});
                 $("#teacher").click(()=>{});
@@ -180,11 +202,13 @@ function load() {
 
     $("#doctor").click(() => {
         if (hospitalPressed && count === 1) {
+            docPressed = true;
             $("#hospital").addClass("animated pulse infinite");
             $("#doctor").css("animation", "moveDoctor 5s forwards");
             setTimeout(()=> {
                 $("#doctor").removeClass("animated pulse infinite");
                 $("#hospital").removeClass("animated pulse infinite");
+                won();
             }, 5000);
             $("#doctor").click(()=>{});
             $("#hospital").click(()=>{});
@@ -208,9 +232,11 @@ function load() {
             if (docPressed && count === 1) {
                 $("#hospital").addClass("animated pulse infinite");
                 $("#doctor").css("animation", "moveDoctor 5s forwards");
+                hospitalPressed = true;
                 setTimeout(()=> {
                     $("#hospital").removeClass("animated pulse infinite");
                     $("#doctor").removeClass("animated pulse infinite");
+                    won();
                 }, 5000);
                 $("#hospital").click(()=>{});
                 $("#doctor").click(()=>{});
@@ -235,9 +261,11 @@ function load() {
         if (bankPressed && count === 1) {
             $("#bank").addClass("animated pulse infinite");
             $("#suit").css("animation", "moveSuit 5s forwards");
+            suitPressed = true;
             setTimeout(()=> {
                 $("#bank").removeClass("animated pulse infinite");
                 $("#suit").removeClass("animated pulse infinite");
+                won();
             }, 5000);
             $("#bank").click(()=>{});
             $("#suit").click(()=>{});
@@ -259,11 +287,13 @@ function load() {
 
     $("#bank").click(()=> {
             if (suitPressed && count === 1) {
+                bankPressed = true;
                 $("#bank").addClass("animated pulse infinite");
                 $("#suit").css("animation", "moveSuit 5s forwards");
                 setTimeout(()=> {
                     $("#bank").removeClass("animated pulse infinite");
                     $("#suit").removeClass("animated pulse infinite");
+                    won();
                 }, 5000);
                 $("#bank").click(()=>{});
                 $("#suit").click(()=>{});
@@ -288,4 +318,16 @@ function load() {
 }
 function back() {
     window.location.replace('./index.html')
+}
+
+
+
+function playAudio() {
+    event.stopPropagation();
+    document.getElementById('music').pause();
+    document.getElementById('dif').play();
+    setTimeout(() => {
+        document.getElementById('music').play();
+    }, 7000);
+
 }
