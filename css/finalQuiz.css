@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.bg {
+    position: relative;
+    background: url(../img/cityBg.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+.star {
+    width: 8%;
+    position: absolute;
+}
