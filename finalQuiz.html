@@ -12,6 +12,8 @@
 </head>
 <body onload="quizResults()">
 <div id="bg" class="bg">
+    <img id="car" class="car" src="./img/car_with_boy.png">
+    <img id="boy" class="boy"  style="display: none" src="./img/boy.png">
     <div id="stars1"></div>
     <div id="stars2"></div>
     <div id="stars3"></div>
@@ -21,7 +23,9 @@
     <audio id="soundThree" controls hidden src="sounds/4dif.mp4" type="audio/mpeg"></audio>
     <audio id="soundFour" controls hidden src="sounds/4dif.mp4" type="audio/mpeg"></audio>
     <audio id="listen" controls hidden src="sounds/4dif.mp4" type="audio/mpeg"></audio>
+    <audio id="music" controls autoplay loop hidden src="sounds/autobuzul-1.mp3" type="audio/mpeg"></audio>
     <img class="button-listen-quiz" src="./img/listen1.png" onclick="listen()">
+    <img id="next" style="display: none" class="button-next-quiz" src="./img/next_but.png" onclick="next()">
 </div>
 </body>
 </html>

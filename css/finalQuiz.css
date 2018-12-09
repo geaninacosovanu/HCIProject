@@ -7,7 +7,7 @@ body {
 
 .bg {
     position: relative;
-    background: url(../img/cityBg.png) no-repeat;
+    background: url(../img/city2_bg.png) no-repeat;
     height: 100vh;
     width: 100%;
     background-size: 100% 100%;
@@ -15,6 +15,34 @@ body {
 }
 
 .star {
-    width: 8%;
+    width: 7%;
     position: absolute;
+}
+
+.car {
+    z-index: 1;
+    position: absolute;
+    width: 20%;
+    bottom: 11%;
+    left: 0%;
+    animation: animate 5s forwards;
+
+}
+
+.boy {
+    z-index: 1;
+    position: absolute;
+    bottom: 15%;
+    right: 16%;
+    width: 6%;
+}
+
+@keyframes animate {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 5%;
+
+    }
 }
