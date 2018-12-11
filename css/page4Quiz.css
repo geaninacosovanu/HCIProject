@@ -15,41 +15,41 @@ body {
 }
 
 .car {
-    height:400px;
-    position:fixed;
-    bottom:70px;
+    width: 21%;
+    bottom: 11%;
+    position: absolute;
 }
 
 .traffic {
-    z-index:1;
-    height: auto;
+    z-index: 1;
+    width: 27%;
     position: absolute;
-    bottom: 80px;
-    left: 200px;
+    bottom: 15%;
+    left: 17%;
     animation: animateSemaphore 21s forwards;
 }
 #yellow{
-    left: 1200px;
-    position: fixed;
-    bottom: 240px;
+    left: 45%;
+    position: absolute;
+    bottom: 19%;
 }
 
 #blue {
-    left: 1200px;
-    position: fixed;
-    bottom: 80px;
+    left: 45%;
+    position: absolute;
+    bottom: 9%;
 }
 
 #red {
-    left: 1200px;
-    position: fixed;
-    bottom: 320px;
+    left: 45%;
+    position: absolute;
+    bottom: 38%;
 }
 
 #green {
-    left: 1200px;
-    position: fixed;
-    bottom: 160px;
+    left: 45%;
+    position: absolute;
+    bottom: 29%;
 }
 
 
@@ -57,4 +57,18 @@ body {
     width: 6%;
     position: absolute;
     bottom: 0;
+}
+
+.car-go {
+    animation: animate-car 5s forwards;
+
+}
+@keyframes animate-car {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 100%;
+
+    }
 }

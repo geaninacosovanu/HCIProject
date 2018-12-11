@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#patient {
+    position: absolute;
+    left: 33px;
+    bottom: 0px;
+    width: 21%;
+}
+
+.button-listen-quiz {
+    width: 7%;
+    position: absolute;
+    left: 46%;
+}
+
+#police_car {
+    width: 9%;
+    position: absolute;
+    right: 1031px;
+    bottom: 18px;
+    z-index: 1;
+}
+
+#policeman {
+    width: 5%;
+    position: absolute;
+    right: 6%;
+    bottom: 0%;
+    z-index: 1;
+}
+
+#police {
+    position: absolute;
+    width: 17%;
+    bottom: 42%;
+    right: 0%;
+    z-index: 1;
+}
+
+#hospital {
+    width: 24%;
+    position: absolute;
+    right: 37%;
+    bottom: 37%;
+    height: 37%;
+}
+
+
+#secretar {
+    width: 5%;
+    position: absolute;
+    right: 547px;
+    bottom: 27px;
+}
+
+#mayor {
+    width: 5%;
+    position: absolute;
+    right: 50%;
+    bottom: 0%;
+}
+
+#cityhall {
+    width: 25%;
+    position: absolute;
+    right: 16%;
+    bottom: 33%;
+}
+
+#doctor {
+    position: absolute;
+    bottom: 0%;
+    right: 14%;
+    width: 10%;
+}
+.bg {
+    position: relative;
+    background: url(../img/bg_pres.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+#bank {
+    width: 25%;
+    position: absolute;
+    left: 17%;
+    bottom: 34%;
+    height: 68%;
+}
+#school {
+    position: absolute;
+    bottom: 39%;
+    z-index: 1;
+    width: 20%;
+    height: 31%;
+}
+
+#teacher {
+    z-index: 2;
+    position: absolute;
+    width: 10%;
+    left: 33%;
+    bottom: 0%;
+}
+
+#children {
+    width: 10%;
+    bottom: 25px;
+    position: absolute;
+    z-index: 2;
+    left: 1000px;
+}
+
+#thief {
+    position: absolute;
+    width: 6%;
+    z-index: 2;
+    bottom: 26px;
+    left: 314px;
+}
+
+#suit {
+    position: absolute;
+    width: 10%;
+    z-index: 2;
+    bottom: 0%;
+    left: 9%;
+}
+
+@keyframes moveSuit {
+    from {
+        bottom: 0%;
+        left: 9%;
+    }
+    to {
+        bottom: 35%;
+        left: 19%;
+    }
+}
+
+
+@keyframes moveThief {
+    from {
+        bottom: 26px;
+        left: 314px;
+    }
+    to {
+        left: 309px;
+        bottom: 366px;
+    }
+}
+
+@keyframes moveTeacher {
+    from {
+        width: 10%;
+        left: 33%;
+    }
+    to {
+        left: 0%;
+        bottom: 36%;
+    }
+}
+
+@keyframes moveKids {
+
+    from {
+        bottom: 25px;
+        left: 1000px;
+    }
+
+    to {
+        bottom: 367px;
+        left: 64px;
+    }
+}
+
+@keyframes movePatient {
+
+    from {
+        left: 551px;
+        bottom: 345px;
+    }
+
+    to {
+        left: 33px;
+        bottom: 0px;
+    }
+}
+
+@keyframes moveDoctor {
+    from {
+        right: 14%;
+        width: 10%;
+    }
+
+    to {
+        bottom: 35%;
+        right: 44%;
+    }
+}
+
+@keyframes moveMayor {
+    from {
+        right: 50%;
+        bottom: 0%;
+    }
+
+    to {
+        right: 27%;
+        bottom: 38%;
+    }
+}
+
+@keyframes moveSecretar {
+    from {
+        right: 547px;
+        bottom: 27px;
+    }
+
+    to {
+        right: 555px;
+        bottom: 250px;
+    }
+}
+
+@keyframes moveCop {
+    from {
+        right: 6%;
+        bottom: 0%;
+    }
+    to {
+        right: 6%;
+        bottom: 38%;
+    }
+}
+@keyframes moveCar {
+
+    from {
+        right: 1031px;
+        bottom: 18px;
+    }
+    to {
+        right: 107px;
+        bottom: 280px;
+    }
+}

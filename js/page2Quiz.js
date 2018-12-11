@@ -30,7 +30,7 @@ function imageClick(imgNr) {
 
 function wrongClick() {
     event.stopPropagation();
-    console.log('wrong click');
+    playWrong();
     $('#' + ids[0]).addClass('animated pulse infinite');
 
 }
@@ -40,6 +40,16 @@ function playAudio() {
     event.stopPropagation();
     document.getElementById('music').pause();
     document.getElementById('dif').play();
+    setTimeout(() => {
+        document.getElementById('music').play();
+    },7000);
+}
+
+function playWrong() {
+    event.stopPropagation();
+    document.getElementById('music').pause();
+    document.getElementById('dif').pause();
+    document.getElementById('wrong').play();
     setTimeout(() => {
         document.getElementById('music').play();
     },7000);

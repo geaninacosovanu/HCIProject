@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.bg {
+    position: relative;
+    background: url(../img/city2_bg.png) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+.star {
+    width: 7%;
+    position: absolute;
+}
+
+.car {
+    z-index: 1;
+    position: absolute;
+    width: 20%;
+    bottom: 11%;
+    left: 0%;
+    animation: animate 5s forwards;
+
+}
+
+.boy {
+    z-index: 1;
+    position: absolute;
+    bottom: 15%;
+    right: 16%;
+    width: 6%;
+}
+
+@keyframes animate {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 5%;
+
+    }
+}
