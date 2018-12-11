@@ -8,8 +8,6 @@ function load() {
             $('#back').css('display', 'block');
             $('#next').css('display', 'block');
         })
-
-
     }, 5000);
 }
 
@@ -18,7 +16,7 @@ function playAudio() {
     document.getElementById('sound').play();
     setTimeout(() => {
         document.getElementById('music').play();
-    },7000);
+    },17000);
 }
 
 function back() {
