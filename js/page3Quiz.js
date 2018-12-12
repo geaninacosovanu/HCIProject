@@ -15,80 +15,96 @@ function next() {
 
 let won = false;
 let tires_pressed = 0;
+let other_pressed = false;
 
 function startTireQuiz() {
     $("#tire1").click(() => {
-        $('#tire1').css('animation', 'moveTire1 4s forwards');
-        $('#tire1').click(() => {
-        });
+        if (other_pressed === false) {
+            $('#tire1').css('animation', 'moveTire1 4s forwards');
+            $('#tire1').click(() => {
+            });
+            other_pressed = true;
+            setTimeout(() => {
+                tires_pressed += 1;
+                if (tires_pressed === 1 || tires_pressed === 2) {
+                    $("#car").attr("src", "img/" + 2 + "-tires-car.png");
+                }
+                else
+                    $("#car").attr("src", "img/" + tires_pressed + "-tires-car.png");
+                $('#tire1').css('display', 'none');
+                appendStar();
+                other_pressed = false;
+                success();
 
-        setTimeout(() => {
-            tires_pressed += 1;
-            if (tires_pressed === 1 || tires_pressed === 2) {
-                $("#car").attr("src", "img/" + 2 + "-tires-car.png");
-            }
-            else
-                $("#car").attr("src", "img/" + tires_pressed + "-tires-car.png");
-            $('#tire1').css('display', 'none');
-            appendStar();
-            success();
-
-        }, 4000);
+            }, 4000);
+        }
     });
 
     $("#tire2").click(() => {
-        $('#tire2').css('animation', 'moveTire2 6s forwards');
-        $('#tire2').click(() => {
-        });
-        setTimeout(() => {
-            tires_pressed += 1;
+        if (other_pressed === false) {
+            other_pressed = true;
+            $('#tire2').css('animation', 'moveTire2 6s forwards');
+            $('#tire2').click(() => {
+            });
+            setTimeout(() => {
+                tires_pressed += 1;
 
-            if (tires_pressed === 1 || tires_pressed === 2) {
-                $("#car").attr("src", "img/" + 2 + "-tires-car.png");
-            }
-            else
-                $("#car").attr("src", "img/" + tires_pressed + "-tires-car.png");
-            $('#tire2').css('display', 'none');
-            appendStar();
-            success();
+                if (tires_pressed === 1 || tires_pressed === 2) {
+                    $("#car").attr("src", "img/" + 2 + "-tires-car.png");
+                }
+                else
+                    $("#car").attr("src", "img/" + tires_pressed + "-tires-car.png");
+                $('#tire2').css('display', 'none');
+                appendStar();
+                other_pressed = false;
+                success();
 
-        }, 6000);
+            }, 6000);
+        }
     });
 
     $("#tire3").click(() => {
-        $('#tire3').css('animation', 'moveTire3 5s forwards');
-        $('#tire3').click(() => {
-        });
-        setTimeout(() => {
-            tires_pressed += 1;
+        if (other_pressed === false) {
+            other_pressed = true;
+            $('#tire3').css('animation', 'moveTire3 5s forwards');
+            $('#tire3').click(() => {
+            });
+            setTimeout(() => {
+                tires_pressed += 1;
 
-            if (tires_pressed === 1 || tires_pressed === 2) {
-                $("#car").attr("src", "img/" + 2 + "-tires-car.png");
-            }
-            else
-                $("#car").attr("src", "img/" + 4 - tires_pressed + "-tires-car.png");
-            $('#tire3').css('display', 'none');
-            appendStar();
-            success();
+                if (tires_pressed === 1 || tires_pressed === 2) {
+                    $("#car").attr("src", "img/" + 2 + "-tires-car.png");
+                }
+                else
+                    $("#car").attr("src", "img/" + 4 - tires_pressed + "-tires-car.png");
+                $('#tire3').css('display', 'none');
+                appendStar();
+                other_pressed = false;
+                success();
 
-        }, 5000);
+            }, 5000);
+        }
     });
 
     $("#tire4").click(() => {
-        $('#tire4').css('animation', 'moveTire4 7s forwards');
-        $('#tire4').click(() => {
-        });
-        setTimeout(() => {
-            tires_pressed += 1;
-            if (tires_pressed === 1 || tires_pressed === 2) {
-                $("#car").attr("src", "img/" + 2 + "-tires-car.png");
-            }
-            else
-                $("#car").attr("src", "img/" + tires_pressed + "-tires-car.png");
-            $('#tire4').css('display', 'none');
-            appendStar();
-            success();
-        }, 7000);
+        if (other_pressed === false) {
+            $('#tire4').css('animation', 'moveTire4 7s forwards');
+            other_pressed = true;
+            $('#tire4').click(() => {
+            });
+            setTimeout(() => {
+                tires_pressed += 1;
+                if (tires_pressed === 1 || tires_pressed === 2) {
+                    $("#car").attr("src", "img/" + 2 + "-tires-car.png");
+                }
+                else
+                    $("#car").attr("src", "img/" + tires_pressed + "-tires-car.png");
+                $('#tire4').css('display', 'none');
+                appendStar();
+                success();
+                other_pressed = false;
+            }, 7000);
+        }
     });
 
 }
