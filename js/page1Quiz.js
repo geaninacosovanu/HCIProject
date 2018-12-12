@@ -7,6 +7,7 @@ function nextPage2() {
 }
 
 function load() {
+    playAudio();
     var nextButton = document.getElementById("nextButton");
     nextButton.style.visibility = 'hidden';
 }

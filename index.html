@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="lib/css/animate.min.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="lib/js/jquery.js"></script>
+
 </head>
-<body>
+<body onload="onLoad()">
 <script>
     function presentation() {
         window.location.replace('./page1.html');
@@ -18,11 +21,15 @@
     }
 </script>
 <div class="bg">
-    <img src="./img/start_but.png" class="button button-pres animated pulse infinite" onclick="presentation()">
-    <img src="./img/quiz_but.png" class="button button-quiz animated pulse infinite" onclick="test()">
-    <img class="car animated fadeInLeftBig " src="./img/car.png">
-    <img class="boy animated fadeInRightBig delay-1s" src="./img/boy.png">
-    <audio controls loop autoplay hidden src="sounds/autobuzul-1.mp3" type="audio/mpeg"></audio>
+    <img id= "pres" src="./img/start_but.png" style="display: none" class="button button-pres" onclick="presentation()">
+    <img id="quiz" src="./img/quiz_but.png" style="display: none" class="button button-quiz" onclick="test()">
+    <img id="car" style="display: none" class="car" src="./img/car.png">
+    <img id="listen" style="display: none" class="button-listen-quiz " src="./img/listen1.png" onclick="playAudio()" >
+    <img id="back" style="display: none" class="button-back-quiz animated fadeInDown " src="./img/back_but.png">
+    <img id="next" style="display: none" class="button-next-quiz animated fadeInDown " src="./img/next_but.png">
+    <img class="boy animated fadeInRightBig " src="./img/boy.png">
+    <audio id="sound" controls hidden src="sounds/firsr.mp3" type="audio/mpeg"></audio>
+    <audio id="music" controls loop autoplay hidden src="sounds/autobuzul-1.mp3" type="audio/mpeg"></audio>
 </div>
 
 </body>

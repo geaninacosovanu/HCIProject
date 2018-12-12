@@ -17,6 +17,7 @@ let won = false;
 let tires_pressed = 0;
 
 function startTireQuiz() {
+    playAudio();
     $("#tire1").click(() => {
         $('#tire1').css('animation', 'moveTire1 4s forwards');
         $('#tire1').click(() => {
@@ -109,7 +110,7 @@ function success() {
 function playAudio() {
     event.stopPropagation();
     document.getElementById('music').pause();
-    document.getElementById('dif').play();
+    document.getElementById('sound').play();
     setTimeout(() => {
         document.getElementById('music').play();
     }, 7000);

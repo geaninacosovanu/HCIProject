@@ -1,6 +1,7 @@
 let left = 0;
 
 function startLightQuiz() {
+    playAudio();
     $('#blue').click(() => playWrong());
     $('#yellow').click(() => playWrong());
     $('#green').click(() => playWrong());
@@ -83,6 +84,6 @@ function playAudio() {
     document.getElementById('sound').play();
     setTimeout(() => {
         document.getElementById('music').play();
-    }, 4000);
+    }, 7000);
 
 }

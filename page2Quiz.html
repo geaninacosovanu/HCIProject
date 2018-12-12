@@ -10,8 +10,8 @@
     <script type="text/javascript" src="lib/js/jquery.js"></script>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 </head>
-<body>
-<div id="bg" class="bg" onclick="wrongClick()">
+<body onload="playAudio()">
+<div id="bg" class="bg"  onclick="wrongClick()">
     <img id="back" class="button-back-quiz" style="display: none" src="./img/back_but.png" onclick="back()">
     <img id="next" class="button-next-quiz" style="display: none" src="./img/next_but.png" onclick="next()">
     <img id="1" class="sun" onclick="imageClick(1)" src="./img/sun.png">
@@ -20,7 +20,7 @@
     <img id="4" class="traffic-light" onclick="imageClick(4)" src="./img/traffic-light.png">
     <audio id="music" controls loop autoplay hidden src="sounds/autobuzul-1.mp3" type="audio/mpeg"></audio>
     <img class="button-listen-quiz" src="./img/listen1.png" onclick="playAudio()">
-    <audio id="dif" controls hidden src="sounds/4dif.mp4" type="audio/mpeg"></audio>
+    <audio id="dif" controls hidden src="sounds/4dif.mp3" type="audio/mpeg"></audio>
     <audio id="wrong" controls hidden src="sounds/wrongAnswer.mp3" type="audio/mpeg"></audio>
 
 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="lib/css/animate.min.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/index1.css">
+</head>
+<body>
+<script>
+    function presentation() {
+        window.location.replace('./page1.html');
+    }
+    function test() {
+        window.location.replace('./page1Quiz.html');
+    }
+    function playAudio() {
+        document.getElementById('music').pause();
+        document.getElementById('sound').play();
+        setTimeout(() => {
+            document.getElementById('music').play();
+        }, 490000);
+    }
+</script>
+<div class="bg">
+    <img src="./img/start_but.png" class="button button-pres animated pulse infinite" onclick="presentation()">
+    <img src="./img/quiz_but.png" class="button button-quiz animated pulse infinite" onclick="test()">
+    <img class="car animated" src="./img/car.png">
+    <img class="boy animated" src="./img/boy.png">
+    <img id="listen" class="button-listen-quiz " src="./img/listen1.png" onclick="playAudio()" >
+    <audio id="sound" controls hidden src="sounds/firsr.mp3" type="audio/mpeg"></audio>
+    <audio id = "music" controls loop autoplay hidden src="sounds/autobuzul-1.mp3" type="audio/mpeg"></audio>
+</div>
+
+</body>
+</html>

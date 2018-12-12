@@ -18,9 +18,7 @@
     <img class="button-back-quiz" src="./img/back_but.png" onclick="back()">
     <img id="nextButton" class="button-next-quiz" src="./img/next_button.png" onclick="nextPage2()">
     <img class="button-listen-quiz" src="./img/listen1.png" onclick="playAudio()">
-    <audio id="cateMasini">
-        <source src="sounds/cateMasini.mp3" type="audio/mpeg">
-    </audio>
+    <audio id="sound" src="sounds/cate_masini.mp3" type="audio/mpeg"></audio>
 
     <img class="car1" src="./img/car.png">
     <img class="car2" src="./img/car.png">
@@ -57,7 +55,7 @@
     <div id="stars"></div>
 
     <script>
-        var x = document.getElementById("cateMasini");
+        var x = document.getElementById("sound");
 
         function playAudio() {
             document.getElementById('music').pause();

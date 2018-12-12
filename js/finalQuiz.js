@@ -7,7 +7,7 @@ function appendStar1() {
             "left": left + '%',
             "top": "25%"
         }));
-        left +=7 ;
+        left += 7;
     }
 }
 
@@ -48,7 +48,7 @@ function appendStar4() {
 }
 
 function next() {
-    window.location.replace('./index.html')
+    window.location.replace('./index1.html')
 }
 
 
@@ -56,35 +56,30 @@ function quizResults() {
     setTimeout(function () {
         $('#car').attr('src', './img/car.png');
         $('#boy').css('display', 'block');
-        //playAudio();
         setTimeout(() => {
-            document.getElementById('music').pause();
-            document.getElementById('soundOne').play();
             appendStar1();
             setTimeout(() => {
-                document.getElementById('soundTwo').play();
                 appendStar2();
                 setTimeout(() => {
-                    document.getElementById('soundThree').play();
                     appendStar3();
                     setTimeout(() => {
-                        document.getElementById('soundFour').play();
                         appendStar4();
                         setTimeout(() => {
-                            document.getElementById('music').play();
+                            playAudio();
                             $('#next').css('display', 'block');
-                        }, 5000);
-                    }, 5000);
-                }, 5000);
-            }, 5000);
+                        }, 3000);
+                    }, 3000);
+                }, 3000);
+            }, 3000);
         })
     }, 7000);
 
+
 }
 
-function listen(id) {
+function playAudio(id) {
     document.getElementById('music').pause();
-    document.getElementById('listen').play();
+    document.getElementById('sound').play();
     setTimeout(() => {
         document.getElementById('music').play();
     }, 5000);

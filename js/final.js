@@ -350,21 +350,19 @@ function back() {
 }
 
 function next() {
-    window.location.replace('./index.html')
+    window.location.replace('./index1.html')
 }
 
 function playAudio() {
-    event.stopPropagation();
     document.getElementById('music').pause();
     document.getElementById('dif').play();
     setTimeout(() => {
         document.getElementById('music').play();
-    }, 7000);
+    }, 8000);
 
 }
 
 function playWrong() {
-    event.stopPropagation();
     document.getElementById('music').pause();
     document.getElementById('dif').pause();
     document.getElementById('wrong').play();
