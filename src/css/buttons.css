@@ -1,8 +1,8 @@
 .button{
     cursor: pointer;
-    width: 8%;
+    width: 9%;
     position: absolute;
-    top: 13%;
+    top: 15%;
 }
 .button-pres {
     left: 35%;
@@ -11,17 +11,10 @@
     left: 55%;
 }
 
-.button-back {
-    cursor: pointer;
-    width: 5%;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 
 .button-back-quiz {
     cursor: pointer;
-    width: 5%;
+    width: 7%;
     position: absolute;
     top: 0;
     left: 0;
@@ -29,14 +22,14 @@
 
 .button-next-quiz {
     cursor: pointer;
-    width: 5%;
+    width: 7%;
     position: absolute;
     top: 0;
     right: 0;
 }
 
 .button-listen-quiz {
-    width: 7%;
+    width: 9%;
     position: absolute;
-    left: 46%;
+    left: 45%;
 }
