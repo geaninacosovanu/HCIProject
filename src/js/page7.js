@@ -16,7 +16,7 @@ function playAudio() {
     document.getElementById('sound').play();
     setTimeout(() => {
         document.getElementById('music').play();
-    },7000);
+    },15000);
 }
 
 function back() {

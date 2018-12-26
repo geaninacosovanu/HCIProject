@@ -58,19 +58,24 @@ function quizResults() {
         $('#boy').css('display', 'block');
         setTimeout(() => {
             appendStar1();
+            document.getElementById('music').pause();
+            document.getElementById('soundProba1').play();
             setTimeout(() => {
                 appendStar2();
+                document.getElementById('soundProba2').play();
                 setTimeout(() => {
                     appendStar3();
+                    document.getElementById('soundProba3').play();
                     setTimeout(() => {
                         appendStar4();
+                        document.getElementById('soundProba4').play();
                         setTimeout(() => {
                             playAudio();
                             $('#next').css('display', 'block');
-                        }, 3000);
-                    }, 3000);
-                }, 3000);
-            }, 3000);
+                        }, 4000);
+                    }, 4000);
+                }, 4000);
+            }, 4000);
         })
     }, 7000);
 
@@ -82,5 +87,5 @@ function playAudio(id) {
     document.getElementById('sound').play();
     setTimeout(() => {
         document.getElementById('music').play();
-    }, 5000);
+    }, 8000);
 }
